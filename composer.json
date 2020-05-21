@@ -1,0 +1,13 @@
+{
+  "name": "rbarbante/328/midterm",
+  "authors": [
+    {
+      "name": "Roldan Barbante",
+      "email": "rbarbante@mail.greenriver.com"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
