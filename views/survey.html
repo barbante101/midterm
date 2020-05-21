@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Survey</h1>
+
+    <form class = "form-group" id = "surveyData" method = "post">
+
+        <div>
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Please input your name"
+               value="<check if='{{ !empty(@selectedName) }}'>{{ @selectedName }}</check>">
+        </div>
+
+        <div>
+            <label>Check all that apply</label>
+            <input type="checkbox" id="easy" name="easy"
+                   checked>
+            <label for="easy">This midterm is easy</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="midterms" name="midterms">
+            <label for="midterms">I like midterms</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="monday" name="monday">
+            <label for="monday">Today is Monday</label>
+        </div>
+
+        <button id="button" type="submit" class="btn-primary">Submit</button>
+    </form>
+</body>
+</html>
